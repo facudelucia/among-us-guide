@@ -1,4 +1,4 @@
-.app{
+.skills{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -6,14 +6,10 @@
     flex-direction: column;
     font-weight: bold;
 }
-.app h2{
+.skills h2{
     margin-top: 15px;
 }
-.apagado{
-    color: gray;
-    font-style: italic;
-}
-.app__index{
+.skills__index{
     margin-top: 20px;
     background-color: rgba(255,255,255,0.5);
     width: auto;
@@ -21,6 +17,6 @@
     padding: 10px;
     color: black;
 }
-.app__index h5{
+.skills__index h5{
     text-align: center;
 }

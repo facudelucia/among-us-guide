@@ -1,0 +1,58 @@
+.contacto{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contacto h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-form{
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    text-align: center
+}
+.contact-form label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+    border: 0;
+    padding: 10px 20px;
+    outline: none;
+    transition: 0.5s;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px rgb(45, 120, 158);
+}
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 12px 50px;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    width: 100%;
+}
+.contact-form-btn:hover{
+    background-color: #ccc;
+    letter-spacing: 4px;
+}

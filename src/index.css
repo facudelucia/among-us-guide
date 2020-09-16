@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,35 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.load{
+  animation: slide 2s
+}
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  animation: slide 10s infinite;
+}
+.content{
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
+@keyframes slide{
+  0%{
+    background-image: url("./assets/img/15997483923738.jpg");
+  }
+  50%{
+    background-image: url("./assets/img/15997483923738.jpg");
+  }
+  50.01%{
+    background-image: url("./assets/img/que-es-among-us-el-ultimo-juego-que-se-ha-apoderado-de-twitch.jpg");
+  }
+  100%{
+    background-image: url("./assets/img/que-es-among-us-el-ultimo-juego-que-se-ha-apoderado-de-twitch.jpg");
+  }
 }
