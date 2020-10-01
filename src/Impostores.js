@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Impostores.css"
+import {Link as LinkScroll} from "react-scroll";
 function Impostores() {
     return (
         <div className="slider">
@@ -8,19 +9,19 @@ function Impostores() {
             </div>
 
             <div className="content">
-                <div className="impostores">
+                <div className="impostores animate__animated animate__fadeIn">
                     <h2>El impostor en Among Us: ¿Cómo matar a todos y ganar?</h2>
                     <p className="apagado">Te mostramos los mejores trucos y conejos para ser el impostor y matar a todos los tripulantes sin ser descubierto en Among Us para poder ganar la partida.</p>
                 <div className="impostores__index">
                     <h5>Índice</h5>
                     <ul>
-                        <li>¿Cómo se juega como el Impostor?</li>
-                        <li>Consejos para matar y no ser descubierto</li>
-                        <li>¿Qué probabilidad hay de ser impostor?</li>
+                    <LinkScroll className="enlace" to="howPlayImp" smooth={true} duration={1000}><li>¿Cómo se juega como el Impostor?</li></LinkScroll>
+                    <LinkScroll className="enlace" to="adviceKill" smooth={true} duration={1000}><li>Consejos para matar y no ser descubierto</li></LinkScroll>
+                    <LinkScroll className="enlace" to="probability" smooth={true} duration={1000}><li>¿Qué probabilidad hay de ser impostor?</li></LinkScroll>
                     </ul>
                 </div>
                 <p>Uno de los dos bandos en el que se puede jugar a Among Us es en el del Impostor, el jugador infiltrado entre los tripulantes que debe usar estratagemas para asesinar a todos los demás tripulantes sin ser descubierto. En esta entrada de nuestra guía vamos a contarte las claves para ganar jugando como impostor, con los mejores consejos y estrategias.</p>
-                <h3>¿Cómo se juega como el Impostor?</h3>
+                <h3 id="howPlayImp">¿Cómo se juega como el Impostor?</h3>
                 <p>El objetivo del impostor (o impostores) en Among Us es obvio. Hay dos formas de ganar la partida siendo impostor:</p>
 
 <ul>
@@ -28,7 +29,7 @@ function Impostores() {
     <li>Sabotear las instalaciones: de manera que los tripulantes no lleguen a tiempo a arreglar los problemas críticos.</li>
 </ul>
 <p>Obviamente la principal forma de ganar es matar al resto de tripulantes, cosa nada sencilla, pero esa es parte de la gracia de ser impostor. Y además en este rol tendremos un buen puñado de habilidades para facilitarnos las cosas.</p>
-<h3>Consejos para matar y no ser descubierto</h3>
+<h3 id="adviceKill">Consejos para matar y no ser descubierto</h3>
 
 <p>A la hora de jugar como impostor, como planteamiento global, hay que ser muy meticuloso y jugar con inteligencia. Nunca dejes que te vean actuar, nunca des motivos para que sospechen de ti, intenta culpabilizar a otros con cierta coherencia y, sobre todo, aprovecha las habilidades de impostor para tener ventaja.</p>
 
@@ -83,7 +84,7 @@ function Impostores() {
     <li>Cuando se realicen votaciones, intenta ser neutral y no llevar la delantera para no llamar mucho la atención.
 </li>
 </ul>
-<h3>¿Qué probabilidad hay de ser impostor?</h3>
+<h3 id="probability">¿Qué probabilidad hay de ser impostor?</h3>
 <p>Ser impostor o no es cuestión de aleatoriedad. Dependiendo de las opciones del juego en una partida puede haber hasta 3 impostores. La probabilidad de que te toque serlo es 100 multiplicado por el número de impostores posibles, dividido por el número de jugadores totales.</p>
 <ul>
     <li>Por ejemplo: en una partida con 10 jugadores hay un 10% de probabilidad de ser impostor.</li>

@@ -4,6 +4,7 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 5%;
 }
 .contacto h2{
     margin-top: 20px;
@@ -55,4 +56,9 @@
 .contact-form-btn:hover{
     background-color: #ccc;
     letter-spacing: 4px;
+}
+@media screen and (max-width:620px){
+    .contacto{
+        padding-top: 13%;
+    }
 }

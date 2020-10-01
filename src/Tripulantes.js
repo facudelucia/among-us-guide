@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Tripulantes.css"
+import {Link as LinkScroll} from "react-scroll";
 function Tripulantes() {
     return (
         <div className="slider">
@@ -8,7 +9,7 @@ function Tripulantes() {
             </div>
 
             <div className="content">
-                <div className="tripulantes">
+                <div className="tripulantes animate__animated animate__fadeIn">
                     <h2>
                         Among Us: ¿Cómo ganar como tripulantes? Mejores consejos, estrategias y trucos
                     </h2>
@@ -18,14 +19,14 @@ function Tripulantes() {
                     <div className="tripulantes__index">
                         <h5>Indice</h5>
                         <ul>
-                            <li>¿Cómo juegan los tripulantes?</li>
-                            <li>Consejos para ganar y descubrir al impostor</li>
+                        <LinkScroll className="enlace" to="howPlayTrip" smooth={true} duration={1000}><li>¿Cómo juegan los tripulantes?</li></LinkScroll>
+                        <LinkScroll className="enlace" to="adviceWin" smooth={true} duration={1000}><li>Consejos para ganar y descubrir al impostor</li></LinkScroll>
                         </ul>
                     </div>
                     <p>
                         Uno de los dos bandos en el que se puede jugar a Among Us es en el de los Tripulantes (o Crewmates), los jugadores que tienen que sobrevivir realizando tareas y descubriendo quién de entre ellos es el impostor antes de ser asesinados. En esta entrada de nuestra guía vamos a contarte las claves para ganar jugando como tripulante, con los mejores consejos y estrategias.
                     </p>
-                    <h3>¿Cómo juegan los tripulantes?</h3>
+                    <h3 id="howPlayTrip">¿Cómo juegan los tripulantes?</h3>
                     <p>El objetivo de los tripulantes en Among Us es muy claro. Hay dos formas de ganar la partida siendo tripulantes:</p>
                     <ul>
                         <li>
@@ -38,7 +39,7 @@ function Tripulantes() {
                     <p>
                         Cualquiera de las dos opciones es válida aunque, de hecho, lo mejor que puedes hacer es completar tareas mientras tratas de no morir y descubrir al impostor. Es mejor realizar tareas en lugar de solamente dar paseos buscando sospechosos.
                     </p>
-                    <h3>Consejos para ganar y descubrir al impostor</h3>
+                    <h3 id="adviceWin">Consejos para ganar y descubrir al impostor</h3>
                     <p>Una parte importante de jugar como tripulante recae en el trabajo en equipo. Es buena idea apoyarse en los demás porque como dice el refrán: cuatro ojos miran más que dos. El riesgo de estar colaborando sin saberlo con el impostor siempre estará ahí, pero vale la pena correrlo.</p>
                     <p>Aquí van unos cuantos consejos y trucos generales que deberías tener en cuenta a la hora de jugar como tripulante:</p>
                     <h4>Fíjate en los demás jugadores</h4>

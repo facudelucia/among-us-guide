@@ -46,7 +46,7 @@ function Contacto() {
 
       <div className="content">
       
-        <div className="contacto">
+        <div className="contacto animate__animated animate__fadeIn">
         <h2>Contactame</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
             <label>Ingresa tu email</label>

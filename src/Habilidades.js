@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Habilidades.css"
+import { Link as LinkScroll } from "react-scroll";
 function Habilidades() {
     return (
         <div className="slider">
@@ -8,22 +9,22 @@ function Habilidades() {
             </div>
 
             <div className="content">
-                <div className="skills">
+                <div className="skills animate__animated animate__fadeIn">
                     <h2>Habilidades de Among Us: Cómo usarlas y para qué sirve cada una</h2>
                     <p className="apagado">Explicamos cuáles son las habilidades especiales que podemos usar en Among Us y para qué sirve exactamente cada una durante las partidas.</p>
                     <div className="skills__index">
                         <h5>Índice</h5>
                         <ul>
-                            <li>Admin</li>
-                            <li>Kill</li>
-                            <li>Report</li>
-                            <li>Sabotage</li>
-                            <li>Security</li>
-                            <li>Vent</li>
+                        <LinkScroll className="enlace" to="admin" smooth={true} duration={1000}><li>Admin</li></LinkScroll>
+                        <LinkScroll className="enlace" to="kill" smooth={true} duration={1000}><li>Kill</li></LinkScroll>
+                        <LinkScroll className="enlace" to="report" smooth={true} duration={1000}><li>Report</li></LinkScroll>
+                        <LinkScroll className="enlace" to="sabotage" smooth={true} duration={1000}><li>Sabotage</li></LinkScroll>
+                        <LinkScroll className="enlace" to="security" smooth={true} duration={1000}><li>Security</li></LinkScroll>
+                        <LinkScroll className="enlace" to="vent" smooth={true} duration={1000}><li>Vent</li></LinkScroll>
                         </ul>
                     </div>
                     <p>Durante las partidas de Among Us los jugadores podemos hacer uso de ciertas habilidades especiales dependiendo del momento, la situación o nuestro rol (seamos tripulantes o impostores). En esta entrada desglosamos todas las habilidades que existen, cómo usar cada una de ellas y para qué sirven exactamente.</p>
-                    <h3>Admin</h3>
+                    <h3 id="admin">Admin</h3>
                     <ul>
                         <li>
                             ¿Quién puede usarla?: cualquier jugador de la partida.
@@ -38,7 +39,7 @@ function Habilidades() {
                     <p>
                         Puede ser bastante útil para descubrir al impostor si se colabora con otros tripulantes situados en distintas estancias.
                     </p>
-                    <h3>Kill</h3>
+                    <h3 id="kill">Kill</h3>
                     <ul>
                         <li>
                             ¿Quién puede usarla?: solo los jugadores impostores.
@@ -53,7 +54,7 @@ function Habilidades() {
                     <p>
                         Puede usarse contra cualquier jugador tripulante cuando se está lo suficientemente cerca del mismo, en cuyo caso el botón de la habilidad pasará del blanco y negro a color. Cuando un tripulante es asesinado aparecerá en su pantalla una animación brutal.
                     </p>
-                    <h3>Report</h3>
+                    <h3 id="report">Report</h3>
                     <ul>
                         <li>
                             ¿Quién puede usarla?: cualquier jugador de la partida
@@ -68,7 +69,7 @@ function Habilidades() {
                     <p>
                         Durante la discusión los jugadores deberán hablar y exponer los hechos para tratar de deducir, descubrir o acusar al impostor. Los jugadores podrán votar o abstenerse de echar a otro jugador al espacio.
                     </p>
-                    <h3>Sabotage</h3>
+                    <h3 id="sabotage">Sabotage</h3>
                     <ul>
                         <li>
                             ¿Quién puede usarla?: solo los jugadores impostores.
@@ -80,7 +81,7 @@ function Habilidades() {
                     <p>La habilidad de Sabotaje es única de los impostores y muy útil para estos ya que permite crear un problema temporal en el escenario que los tripulantes deberán atender si quieren volver a la normalidad. El impostor puede aprovecharse de esto para planear trampas, crear distracciones o incluso participar en la solución del sabotaje para fingir ser tripulante.</p>
                     <p>Se puede usar pulsando su botón correspondiente y luego escogiendo el lugar del mapa donde se quiera producir el sabotaje. Solo se puede realizar un sabotaje al mismo tiempo y algunos de ellos pueden ser críticos como la fusión del reactor o cortar el oxígeno, los cuales si no se solucionan a tiempo darán la victoria al impostor.
                     </p>
-                    <h3>Security</h3>
+                    <h3 id="security">Security</h3>
                     <ul>
                         <li>
                             ¿Quién puede usarla?: cualquier jugador de la partida.
@@ -91,7 +92,7 @@ function Habilidades() {
                     </ul>
                     <p>Esta habilidad se trata de unas cámaras de vigilancia que cualquiera puede usar en todo momento para ver a través de las mismas distintos lugares del mapa. Es una de las formas ideales de dar con el impostor ya que se puede atrapar a este en el momento oportuno asesinando a otro jugador o usando rejillas de ventilación.</p>
                     <p>Hay que tener en cuenta que cuando alguien está usando las cámaras de vigilancia estas brillarán con una luz roja para que los demás sepan que alguien está vigilando a través de las mismas.</p>
-                    <h3>Vent</h3>
+                    <h3 id="vent">Vent</h3>
                     <ul>
                         <li>
                             ¿Quién puede usarla?: solo los jugadores impostores.

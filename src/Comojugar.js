@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Comojugar.css"
+import {Link as LinkScroll} from "react-scroll";
 function Comojugar() {
     return (
         <div className="slider">
@@ -8,21 +9,21 @@ function Comojugar() {
             </div>
 
             <div className="content">
-                <div className="howTo">
+                <div className="howTo animate__animated animate__fadeIn">
                     <h2>Among Us: ¿Cómo jugar y ganar? trucos y consejos</h2>
                     <p className="apagado">¿Quieres empezar a jugar a Among Us pero no sabes cómo funciona este divertido título? No te preocupes, aquí te damos las claves, trucos y consejos que necesitas para aprender a jugar.</p>
                     <div className="howTo__index">
                         <h5>Indice</h5>
                         <ul>
-                            <li>Como jugar y ganar en Among Us</li>
-                            <li>Reglas y mecanicas</li>
-                            <li>Como empezar una partida o unirse a una</li>
+                        <LinkScroll className="enlace" to="howWin" smooth={true} duration={1000}><li>Como jugar y ganar en Among Us</li></LinkScroll>
+                        <LinkScroll className="enlace" to="rules" smooth={true} duration={1000}><li>Reglas y mecanicas</li></LinkScroll>
+                        <LinkScroll className="enlace" to="start" smooth={true} duration={1000}><li>Como empezar una partida o unirse a una</li></LinkScroll>
                         </ul>
                     </div>
                     <p>
                         Among Us es el divertido título multijugador de Innersloth, disponible en Android, iOS y PC, en el que deberemos sobrevivir en una nave como tripulantes o ser el impostor que tratará de asesinar a todos los demás. Si estás empezando tus primeras partidas o eres nuevo y quieres saber cómo se juega, en esta guía te contamos todos los secretos y consejos para que sepas qué hay que hacer.
                     </p>
-                    <h3>Como jugar y ganar en Among Us</h3>
+                    <h3 id="howWin">Como jugar y ganar en Among Us</h3>
                     <p>
                         Las partidas de Among Us pueden ser de entre 4 a 10 jugadores como máximo en 3 mapas diferentes. El planteamiento es sencillo; somos tripulantes de una nave y entre nosotros hay un impostor con el objetivo de matarlos a todos. Pero ojo, porque ese impostor puede que seamos nosotros mismos.
                     </p>
@@ -40,7 +41,7 @@ function Comojugar() {
                             El impostor: tiene que fingir ser un tripulante mientras sabotea la nave y va asesinando a todos los demás para ganar (puede haber hasta 3 impostores como máximo).
                         </li>
                     </ul>
-                    <h3>Reglas y mecanicas</h3>
+                    <h3 id="rules">Reglas y mecanicas</h3>
                     <p>
                         Cada jugador en una partida de Among Us adopta un color diferente (de entre 12 disponibles), y sobre la cabeza de su personaje aparece su nombre. Los tripulantes tienen que realizar tareas de mantenimiento en la nave para ganar o descubrir al impostor y eyectarlo fuera de la nave antes de que este acabe por matarlos a todos.
                     </p>
@@ -64,7 +65,7 @@ function Comojugar() {
                     <p>
                         Los tripulantes que mueran a manos del impostor se convertirán en fantasmas invisibles que pueden seguir vagando por el mapa y ayudando a realizar tareas en la nave, pero ya no podrán hablar en las discusiones ni votar, porque sabrán quién es el impostor.
                     </p>
-                    <h3>Como empezar una partida o unirse a una</h3>
+                    <h3 id="start">Como empezar una partida o unirse a una</h3>
                     <p>
                         Desde el menú principal de Among Us podemos unirnos a partidas de otros jugadores o directamente crear una partida privada si queremos jugar solo con nuestros amigos. La opción más sencilla es pulsar en el botón "Jugar en línea" y escoger uno de los servidores o partidas disponibles.
                     </p>
